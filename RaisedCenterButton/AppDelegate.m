@@ -12,6 +12,10 @@
 
 #import "SecondViewController.h"
 
+#import "ImagePickerViewController.h"
+
+#import "RaisedCenterButton.h"
+
 @implementation AppDelegate
 
 @synthesize window = _window;
@@ -20,11 +24,19 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    
     // Override point for customization after application launch.
     UIViewController *viewController1 = [[FirstViewController alloc] initWithNibName:@"FirstViewController" bundle:nil];
+
+    ImagePickerViewController *imagePicker = [[ImagePickerViewController alloc] initWithNibName:@"ImagePickerViewController" bundle:nil];
+    
     UIViewController *viewController2 = [[SecondViewController alloc] initWithNibName:@"SecondViewController" bundle:nil];
+    
     self.tabBarController = [[UITabBarController alloc] init];
-    self.tabBarController.viewControllers = [NSArray arrayWithObjects:viewController1, viewController2, nil];
+    self.tabBarController.viewControllers = [NSArray arrayWithObjects:viewController1, imagePicker, viewController2, nil];
+    
+    RaisedCenterButton *button = [RaisedCenterButton buttonWithImage:[UIImage imageNamed:@"abutton.png"] forTabBarController:self.tabBarController];
+    [self.tabBarController.view addSubview:button];
     self.window.rootViewController = self.tabBarController;
     [self.window makeKeyAndVisible];
     return YES;
