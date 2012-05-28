@@ -24,8 +24,11 @@
 + (id)buttonWithImage:(UIImage *)image forTabBarController:(UITabBarController *)tabBarController
 {
     RaisedCenterButton *button = [RaisedCenterButton buttonWithType:UIButtonTypeCustom];
+    
+    // we use this to center our button and take action when the button is used.
     [button setTabBarController:tabBarController];
     [button setButtonImage:image];
+    
     return button;
 }
 
@@ -51,6 +54,7 @@
 
 }
 
+// replicating the action of touching the center button on the tab bar.
 - (IBAction)buttonAction:(id)sender
 {
     [self.tabBarController setSelectedIndex:1];

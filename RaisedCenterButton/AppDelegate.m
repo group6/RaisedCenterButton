@@ -27,7 +27,8 @@
     
     // Override point for customization after application launch.
     UIViewController *viewController1 = [[FirstViewController alloc] initWithNibName:@"FirstViewController" bundle:nil];
-
+    
+    // The viewcontroller that will be activated by our raised center button.
     ImagePickerViewController *imagePicker = [[ImagePickerViewController alloc] initWithNibName:@"ImagePickerViewController" bundle:nil];
     
     UIViewController *viewController2 = [[SecondViewController alloc] initWithNibName:@"SecondViewController" bundle:nil];
@@ -35,8 +36,11 @@
     self.tabBarController = [[UITabBarController alloc] init];
     self.tabBarController.viewControllers = [NSArray arrayWithObjects:viewController1, imagePicker, viewController2, nil];
     
+    // Our uibutton subclass that will be placed over the center button in the
+    // tabbar.
     RaisedCenterButton *button = [RaisedCenterButton buttonWithImage:[UIImage imageNamed:@"abutton.png"] forTabBarController:self.tabBarController];
     [self.tabBarController.view addSubview:button];
+    
     self.window.rootViewController = self.tabBarController;
     [self.window makeKeyAndVisible];
     return YES;

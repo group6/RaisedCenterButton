@@ -42,9 +42,13 @@
 {
     [super viewWillAppear:animated];
     
+    // Putting the picker in "viewDidAppear" guarentees that the user will
+    // launch it every time they touch the raised button.
     UIImagePickerController *imagePicker = [[UIImagePickerController alloc] init];
     [imagePicker setDelegate:self];
     [imagePicker setSourceType:UIImagePickerControllerSourceTypePhotoLibrary];
+    
+    // in the sim, you get the photo gallery. On the device, you get the camera.
     if ([UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypeCamera]) {
         [imagePicker setSourceType:UIImagePickerControllerSourceTypeCamera];
     }
