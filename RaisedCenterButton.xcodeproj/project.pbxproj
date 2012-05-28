@@ -21,6 +21,14 @@
 		815CDDEF15601FC9004FD358 /* second@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 815CDDEE15601FC9004FD358 /* second@2x.png */; };
 		815CDDF215601FCA004FD358 /* FirstViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 815CDDF015601FCA004FD358 /* FirstViewController.xib */; };
 		815CDDF515601FCA004FD358 /* SecondViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 815CDDF315601FCA004FD358 /* SecondViewController.xib */; };
+		815CDDFC15601FE2004FD358 /* iPhone.png in Resources */ = {isa = PBXBuildFile; fileRef = 815CDDFB15601FE2004FD358 /* iPhone.png */; };
+		815CDDFE15601FE4004FD358 /* iPhone Retina.png in Resources */ = {isa = PBXBuildFile; fileRef = 815CDDFD15601FE4004FD358 /* iPhone Retina.png */; };
+		815CDE0115602011004FD358 /* abutton.png in Resources */ = {isa = PBXBuildFile; fileRef = 815CDE0015602011004FD358 /* abutton.png */; };
+		815CDE0315602018004FD358 /* bbutton.png in Resources */ = {isa = PBXBuildFile; fileRef = 815CDE0215602018004FD358 /* bbutton.png */; };
+		815CDE0F15602281004FD358 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 815CDE0E15602281004FD358 /* MobileCoreServices.framework */; };
+		815CDE1315602348004FD358 /* ImagePickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 815CDE1115602348004FD358 /* ImagePickerViewController.m */; };
+		815CDE1415602348004FD358 /* ImagePickerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 815CDE1215602348004FD358 /* ImagePickerViewController.xib */; };
+		81AB56DB15602F21009B3814 /* RaisedCenterButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 81AB56DA15602F21009B3814 /* RaisedCenterButton.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,22 +36,32 @@
 		815CDDD015601FC9004FD358 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		815CDDD215601FC9004FD358 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		815CDDD415601FC9004FD358 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		815CDDD815601FC9004FD358 /* RaisedCenterButton-Info.plist */ = {isa = PBXFileReference; path = "RaisedCenterButton-Info.plist"; sourceTree = "<group>"; };
+		815CDDD815601FC9004FD358 /* RaisedCenterButton-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RaisedCenterButton-Info.plist"; sourceTree = "<group>"; };
 		815CDDDA15601FC9004FD358 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		815CDDDC15601FC9004FD358 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		815CDDDE15601FC9004FD358 /* RaisedCenterButton-Prefix.pch */ = {isa = PBXFileReference; path = "RaisedCenterButton-Prefix.pch"; sourceTree = "<group>"; };
-		815CDDDF15601FC9004FD358 /* AppDelegate.h */ = {isa = PBXFileReference; path = AppDelegate.h; sourceTree = "<group>"; };
+		815CDDDE15601FC9004FD358 /* RaisedCenterButton-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RaisedCenterButton-Prefix.pch"; sourceTree = "<group>"; };
+		815CDDDF15601FC9004FD358 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		815CDDE015601FC9004FD358 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		815CDDE215601FC9004FD358 /* FirstViewController.h */ = {isa = PBXFileReference; path = FirstViewController.h; sourceTree = "<group>"; };
+		815CDDE215601FC9004FD358 /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
 		815CDDE315601FC9004FD358 /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
 		815CDDE515601FC9004FD358 /* first.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = first.png; sourceTree = "<group>"; };
 		815CDDE715601FC9004FD358 /* first@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "first@2x.png"; sourceTree = "<group>"; };
-		815CDDE915601FC9004FD358 /* SecondViewController.h */ = {isa = PBXFileReference; path = SecondViewController.h; sourceTree = "<group>"; };
+		815CDDE915601FC9004FD358 /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
 		815CDDEA15601FC9004FD358 /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
 		815CDDEC15601FC9004FD358 /* second.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = second.png; sourceTree = "<group>"; };
 		815CDDEE15601FC9004FD358 /* second@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "second@2x.png"; sourceTree = "<group>"; };
 		815CDDF115601FCA004FD358 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/FirstViewController.xib; sourceTree = "<group>"; };
 		815CDDF415601FCA004FD358 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/SecondViewController.xib; sourceTree = "<group>"; };
+		815CDDFB15601FE2004FD358 /* iPhone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = iPhone.png; path = ../iPhone.png; sourceTree = "<group>"; };
+		815CDDFD15601FE4004FD358 /* iPhone Retina.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "iPhone Retina.png"; path = "../iPhone Retina.png"; sourceTree = "<group>"; };
+		815CDE0015602011004FD358 /* abutton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = abutton.png; sourceTree = "<group>"; };
+		815CDE0215602018004FD358 /* bbutton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bbutton.png; sourceTree = "<group>"; };
+		815CDE0E15602281004FD358 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		815CDE1015602348004FD358 /* ImagePickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImagePickerViewController.h; sourceTree = "<group>"; };
+		815CDE1115602348004FD358 /* ImagePickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImagePickerViewController.m; sourceTree = "<group>"; };
+		815CDE1215602348004FD358 /* ImagePickerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ImagePickerViewController.xib; sourceTree = "<group>"; };
+		81AB56D915602F21009B3814 /* RaisedCenterButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RaisedCenterButton.h; sourceTree = "<group>"; };
+		81AB56DA15602F21009B3814 /* RaisedCenterButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RaisedCenterButton.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +69,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				815CDE0F15602281004FD358 /* MobileCoreServices.framework in Frameworks */,
 				815CDDD115601FC9004FD358 /* UIKit.framework in Frameworks */,
 				815CDDD315601FC9004FD358 /* Foundation.framework in Frameworks */,
 				815CDDD515601FC9004FD358 /* CoreGraphics.framework in Frameworks */,
@@ -80,6 +99,7 @@
 		815CDDCF15601FC9004FD358 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				815CDE0E15602281004FD358 /* MobileCoreServices.framework */,
 				815CDDD015601FC9004FD358 /* UIKit.framework */,
 				815CDDD215601FC9004FD358 /* Foundation.framework */,
 				815CDDD415601FC9004FD358 /* CoreGraphics.framework */,
@@ -96,12 +116,18 @@
 				815CDDE315601FC9004FD358 /* FirstViewController.m */,
 				815CDDE515601FC9004FD358 /* first.png */,
 				815CDDE715601FC9004FD358 /* first@2x.png */,
+				815CDE1015602348004FD358 /* ImagePickerViewController.h */,
+				815CDE1115602348004FD358 /* ImagePickerViewController.m */,
+				815CDE1215602348004FD358 /* ImagePickerViewController.xib */,
+				81AB56D915602F21009B3814 /* RaisedCenterButton.h */,
+				81AB56DA15602F21009B3814 /* RaisedCenterButton.m */,
 				815CDDE915601FC9004FD358 /* SecondViewController.h */,
 				815CDDEA15601FC9004FD358 /* SecondViewController.m */,
 				815CDDEC15601FC9004FD358 /* second.png */,
 				815CDDEE15601FC9004FD358 /* second@2x.png */,
 				815CDDF015601FCA004FD358 /* FirstViewController.xib */,
 				815CDDF315601FCA004FD358 /* SecondViewController.xib */,
+				815CDDFF15601FF5004FD358 /* Resources */,
 				815CDDD715601FC9004FD358 /* Supporting Files */,
 			);
 			path = RaisedCenterButton;
@@ -116,6 +142,17 @@
 				815CDDDE15601FC9004FD358 /* RaisedCenterButton-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		815CDDFF15601FF5004FD358 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				815CDE0015602011004FD358 /* abutton.png */,
+				815CDE0215602018004FD358 /* bbutton.png */,
+				815CDDFB15601FE2004FD358 /* iPhone.png */,
+				815CDDFD15601FE4004FD358 /* iPhone Retina.png */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -176,6 +213,11 @@
 				815CDDEF15601FC9004FD358 /* second@2x.png in Resources */,
 				815CDDF215601FCA004FD358 /* FirstViewController.xib in Resources */,
 				815CDDF515601FCA004FD358 /* SecondViewController.xib in Resources */,
+				815CDDFC15601FE2004FD358 /* iPhone.png in Resources */,
+				815CDDFE15601FE4004FD358 /* iPhone Retina.png in Resources */,
+				815CDE0115602011004FD358 /* abutton.png in Resources */,
+				815CDE0315602018004FD358 /* bbutton.png in Resources */,
+				815CDE1415602348004FD358 /* ImagePickerViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -190,6 +232,8 @@
 				815CDDE115601FC9004FD358 /* AppDelegate.m in Sources */,
 				815CDDE415601FC9004FD358 /* FirstViewController.m in Sources */,
 				815CDDEB15601FC9004FD358 /* SecondViewController.m in Sources */,
+				815CDE1315602348004FD358 /* ImagePickerViewController.m in Sources */,
+				81AB56DB15602F21009B3814 /* RaisedCenterButton.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -309,6 +353,7 @@
 				815CDDFA15601FCA004FD358 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
