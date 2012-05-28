@@ -10,4 +10,8 @@
 
 @interface RaisedCenterButton : UIButton
 
+@property (copy, nonatomic) UIImage *buttonImage;
+
++ (id)buttonWithImage:(UIImage *)image forTabBarController:(UITabBarController *)tabBarController;
+
 @end
