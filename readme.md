@@ -13,7 +13,7 @@ This example takes a simplier approach and just layers a uibutton subclass on to
 License
 -------
 
-While it's a simple example, I've add a license just to be clear that it's free to use.
+While it's a simple example, I've add a license just to be clear that it's free to use.  See the license.txt file for details.
 
 References
 ----------
